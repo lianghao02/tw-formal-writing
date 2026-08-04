@@ -21,9 +21,10 @@ description: >
   - 翻譯任務
   - 純粹的文章潤飾或改寫
 metadata:
-  version: 1.2.3
-  last_updated: 2026-07-03
+  version: 2.0.0
+  last_updated: 2026-08-03
   status: active
+  gem_knowledge_file: GEM_警政法務_台灣正式公文助手.md
 ---
 
 # 台灣正式文件撰寫助手
