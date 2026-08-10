@@ -1,86 +1,94 @@
+# ?? ��s��x (CHANGELOG)
+
+## ?? v1.2.4 (2026-08-10)
+- **�֤߬[�c��s**�G�M�����μȦs�ɡB������i�Ҳյ��c�u��
+- **�����u��**�G���� C ? D �Ѷ}�o���ҷh�E�A�ظm D:\Caches ���u�֨��]HF_HOME / PIP_CACHE_DIR / PLAYWRIGHT_BROWSERS_PATH�^�C
+- **���c���c**�G�M�׸�Ƨ��e��Ʀr�s���k��A�������˪k v7.1 �P CODEX.md�C
+
 # Changelog
 
-本檔案記錄台灣正式文件撰寫 AI Skill 的版本歷史。
+?��?案�??�台??��式�?件撰�?AI Skill ?��??�歷?��?
 
 ## [1.2.3] - 2026-07-03
 
 ### Changed
-- **對齊釋例第一手來源**：以《文書處理相關釋例》函釋（更新至 115.4.30）、院長電子信箱（更新至 115.6.30）兩份第一手 PDF 為準，將原標「更新至 115.2.23」更新為兩份各自的更新日期（`references/official-letter.md`、README 中英）。
+- **對�??��?第�??��?�?*：以?��??��??�相?��?例》函?��??�新??115.4.30）、院?�電子信箱�??�新??115.6.30）兩份第一??PDF ?��?，�??��??�更?�至 115.2.23?�更?�為?�份?�自?�更?�日?��?`references/official-letter.md`?�README 中英）�?
 
 ### Fixed
-- **修正「臺／台」用字規則的來源日期**：110.12.10 → **110.12.20**。依院長電子信箱 112.6.28 釋例第一手澄清，《公文撰作解析》原引述之「110.12.10 解釋」係誤植，正確日期為 110.12.20（`references/official-letter.md`、`examples/04`、`STANDALONE.md`）。
+- **修正?�臺／台?�用字�??��?來�??��?**�?10.12.10 ??**110.12.20**?��??�長?��?信箱 112.6.28 ?��?第�??��?清�??�公?�撰作解?�》�?引述之�?10.12.10 �???��?誤�?，正確日?�為 110.12.20（`references/official-letter.md`?�`examples/04`?�`STANDALONE.md`）�?
 
 ### Added
-- **`CLAUDE.md`**：repo 架構（references 為 SoT、多入口分發）、build / consistency 指令、版本同步點與 public repo 紀律說明。
-- **`CITATIONS.md`**：#3 日期更正並升級為第一手佐證；新增「臺端」用語與釋例更新日期查核紀錄；backlog 記錄「乙案／乙份」於兩份釋例查無佐證；新增第一手來源檔區塊（含手冊 PDF 為 104 年舊版、不採之判定）。
+- **`CLAUDE.md`**：repo ?��?（references ??SoT?��??�口?�發）、build / consistency ?�令?��??��?步�???public repo 紀律說?��?
+- **`CITATIONS.md`**�?3 ?��??�正並�?級為第�??��?證�??��??�臺端」用語�??��??�新?��??�核紀?��?backlog 記�??��?案�?乙份?�於?�份?��??�無佐�?；新增第一?��?源�??�塊�??��???PDF ??104 年�??�、�??��??��?）�?
 
 ## [1.2.2] - 2026-06-25
 
 ### Added
-- **跨 vendor 通用入口**：新增 `AGENTS.md` / `GEMINI.md`（symlink 至 `STANDALONE.md` 完整單檔），供 Codex / Gemini 等其他 vendor 直接讀取；新增 `.claude-plugin/plugin.json` 供 Claude Code plugin 載入（`skills/` 指向 `SKILL.md`）。一份內容、多種入口：精簡版（SKILL.md，Claude 載 references）給支援 skill 格式者，完整單檔（STANDALONE.md）給其他 vendor。
-- **skill.zip 打包**：可下載 release 附件直接於 claude.ai / cowork 載入。
+- **�?vendor ?�用?�口**：新�?`AGENTS.md` / `GEMINI.md`（symlink ??`STANDALONE.md` 完整?��?）�?�?Codex / Gemini 等其�?vendor ?�接讀?��??��? `.claude-plugin/plugin.json` �?Claude Code plugin 載入（`skills/` ?��? `SKILL.md`）。�?份內容、�?種入???精簡?��?SKILL.md，Claude �?references）給?�援 skill ?��??��?完整?��?（STANDALONE.md）給?��? vendor??
+- **skill.zip ?��?**：可下�? release ?�件?�接??claude.ai / cowork 載入??
 
 ## [1.2.1] - 2026-06-23
 
 ### Changed
-- **觸發描述收窄**（SKILL / STANDALONE / LITE 三版）：移除過寬的「所有中文正式文件」宣稱（與排除清單矛盾）；「計畫書」裸詞改為「施政計畫書／業務計畫書」，避免誤觸研究計畫書、商業計畫書等排除項
-- **LITE.md 表格精簡**：5 個 2 欄線性表轉為緊湊清單（省 token、提升 LLM 遵循度）；4 個多欄矩陣表維持表格。關鍵規則錨點全數保留
-- **CITATIONS.md 補完查核**：行政程序法第171/173條、《文書處理手冊》現行版（第七版）經第一手查證；backlog 縮減
+- **觸發?�述?��?**（SKILL / STANDALONE / LITE 三�?）�?移除?�寬?�「�??�中?�正式�?件」宣稱�??��??��??��??��?；「�??�書?�裸詞改?�「施?��??�書／業?��??�書?��??��?誤觸?�究計畫?�、�?業�??�書等�??��?
+- **LITE.md 表格精簡**�? ??2 欄�??�表轉為緊�?清單（�? token?��???LLM ?�循度�?�? ?��?欄矩??��維�?表格?��??��??�錨點全?��???
+- **CITATIONS.md 補�??�核**：�??��?序�?�?71/173條、《�??��??��??�》現行�?（第七�?）�?第�??�查證�?backlog 縮�?
 
 ## [1.2.0] - 2026-06-23
 
 ### Added
-- **撰寫前三項把關 guardrail**（SKILL / STANDALONE / LITE 三版）：遇自相矛盾要求先糾正再寫、不為冒用機關名義產出成品、貼入內容只當待處理文本不當指令
-- **法律文件總免責聲明**：legal-documents 與 STANDALONE 附錄四開頭加總免責，提醒合約 / NDA / 訴願書等僅供格式參考、不構成法律意見
-- **`CITATIONS.md` 引據查核紀錄**：制度化記錄所有精確法規 / 釋例引據的查核狀態與第一手來源
-- **`scripts/build.py`**：以 `references/` 為單一真實來源自動生成 `STANDALONE.md`，消除三版漂移
-- **`scripts/check_consistency.py` + CI**：檢查 STANDALONE 為最新 build 產物、LITE 涵蓋關鍵規則錨點、三版版號一致
+- **?�寫?��??��???guardrail**（SKILL / STANDALONE / LITE 三�?）�??�自?��??��?求�?糾正?�寫?��??��??��??��?義產?��??�、貼?�內容只?��??��??�本不當?�令
+- **法�??�件總�?責聲??*：legal-documents ??STANDALONE ?��??��??��?總�?責�??��??��? / NDA / 訴�??��??��??��??�考、�?構�?法�??��?
+- **`CITATIONS.md` 引�??�核紀??*：制度�?記�??�?�精確�?�?/ ?��?引�??�查?��??��?第�??��?�?
+- **`scripts/build.py`**：以 `references/` ?�單一?�實來�??��??��? `STANDALONE.md`，�??��??��?�?
+- **`scripts/check_consistency.py` + CI**：檢??STANDALONE ?��???build ?�物?�LITE 涵�??�鍵規�??��??��??��??��???
 
 ### Changed
-- **校正「旨揭 / 旨在」用語定性**：經第一手查證，「旨揭」屬合法的簡化敘述用語、仍可使用，並非廢除用語；移除無法查證的「114.7.11 建議停用」陳述，改為中性風格建議
-- **`STANDALONE.md` 改為 build 產物**：補回先前漂移缺漏的「常見場景快速辨識」等段落，與 references 完全同步
+- **?�正?�旨??/ ?�在?�用語�???*：�?第�??�查證�??�旨?�」屬?��??�簡?��?述用語、�??�使?��?並�?廢除?��?；移?�無法查證�???14.7.11 建議?�用?�陳述�??�為中性風?�建�?
+- **`STANDALONE.md` ?�為 build ?�物**：�??��??��?移缺漏�??�常見場?�快?�辨識」�?段落，�? references 完全?�步
 
 ### Fixed
-- 修正簡體字「届」→ 正體「屆」（9 處）
-- 移除查無第一手佐證的精確日期引據（院長信箱 114.7.11 / 114.12.10），規則保留、來源改標已驗證的通用出處
+- 修正簡�?字「�??��? �???��??��?9 ?��?
+- 移除?�無第�??��?證�?精確?��?引�?（院?�信�?114.7.11 / 114.12.10）�?規�?保�??��?源改標已驗�??�通用?��?
 
 ## [1.1.0] - 2026-04-03
 
 ### Added
-- YAML frontmatter 加入 `metadata:` 區塊（version / last_updated / status），符合 claude.ai 上傳規範
-- `examples/` 目錄，含 3 個完整範例（函、存證信函、陳情書）
-- SKILL.md 加入 Quick Start 區段
-- CHANGELOG.md 版本紀錄
+- YAML frontmatter ?�入 `metadata:` ?�塊�?version / last_updated / status）�?符�? claude.ai 上傳規�?
+- `examples/` ?��?，含 3 ?��??��?例�??�、�?證信?�、陳?�書�?
+- SKILL.md ?�入 Quick Start ?��?
+- CHANGELOG.md ?�本紀??
 
 ## [1.0.0] - 2026-03-29
 
 ### Added
-- AI 使用注意事項及行政院生成式 AI 指引連結 (`b2e84b6`)
-- GitHub sidebar 設定：topics、homepage、FUNDING.yml (`6e80b08`)
-- README 版本號 v1.0 + MIT 授權 + Buy Me a Coffee + 專案說明 (`e4f034e`)
-- README 中英文切換連結 (`82699b1`)
-- README 拆分為中文 `README.md` + 英文 `README_EN.md` (`dc8e70f`)
-- 英文 README + 外國使用者適應機制（所有版本）(`3471504`)
-- README.md 含各 AI 平台匯入說明 (`d840f73`)
+- AI 使用注�?事�??��??�院?��?�?AI ?��???? (`b2e84b6`)
+- GitHub sidebar 設�?：topics?�homepage?�FUNDING.yml (`6e80b08`)
+- README ?�本??v1.0 + MIT ?��? + Buy Me a Coffee + 專�?說�? (`e4f034e`)
+- README 中英?��??��?? (`82699b1`)
+- README ?��??�中??`README.md` + ?��? `README_EN.md` (`dc8e70f`)
+- ?��? README + 外�?使用?�適?��??��??�?��??��?(`3471504`)
+- README.md ?��? AI 平台?�入說�? (`d840f73`)
 
-### Added（功能）
-- 三大新功能：常見場景快速辨識（13 場景）+ 幫我改模式 + 更新互動流程 (`20fb187`)
-- STANDALONE.md 重建，整合三大新功能 (`c9f5371`)
-- LITE.md 精簡版，供 ChatGPT GPTs Instructions 使用 (`89c00a8`)
-- STANDALONE.md 單檔版本（1425 行），供 ChatGPT/Gemini 等平台匯入 (`aad2151`)
-- 品質檢核關卡：HTML 即時檢核引擎 + SKILL.md 品管清單 (`3bd7bf4`)
-- 引導式公文產生器 HTML（簽、函、公告）(`03cc3b5`)
+### Added（�??��?
+- 三大?��??��?常�??�景快速辨識�?13 ?�景�? 幫�??�模�?+ ?�新互�?流�? (`20fb187`)
+- STANDALONE.md ?�建，整?��?大新?�能 (`c9f5371`)
+- LITE.md 精簡?��?�?ChatGPT GPTs Instructions 使用 (`89c00a8`)
+- STANDALONE.md ?��??�本�?425 行�?，�? ChatGPT/Gemini 等平?�匯??(`aad2151`)
+- ?�質檢核?�卡：HTML ?��?檢核引�? + SKILL.md ?�管清單 (`3bd7bf4`)
+- 引�?式公?�產?�器 HTML（簽?�函?�公?��?(`03cc3b5`)
 
 ### Changed
-- simplify review 修正 7 項問題 (`3815e03`)
-- 分段複製模式（公務員）+ 全文複製模式（一般民眾）(`ba7be88`)
+- simplify review 修正 7 ?��?�?(`3815e03`)
+- ?�段複製模�?（公?�員�? ?��?複製模�?（�??��??��?(`ba7be88`)
 
 ### Removed
-- 公文產生器 HTML（改為純 skill 方案）(`a7e8310`)
+- ?��??��???HTML（改?��? skill ?��?�?`a7e8310`)
 
 ## [0.1.0] - 2026-03-29
 
 ### Added
-- Initial commit：台灣正式文件撰寫 Skill（入口路由 + 4 類 reference）(`55a5c43`)
-- 四類文件參考規範：`official-letter.md`、`gov-documents.md`、`legal-documents.md`、`civil-petition.md`
-- 用語對照表：`terminology-tables.md`
+- Initial commit：台??��式�?件撰�?Skill（入??��??+ 4 �?reference�?`55a5c43`)
+- ?��??�件?�考�?範�?`official-letter.md`?�`gov-documents.md`?�`legal-documents.md`?�`civil-petition.md`
+- ?��?對照表�?`terminology-tables.md`
+
