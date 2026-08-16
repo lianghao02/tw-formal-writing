@@ -1,22 +1,40 @@
-# ⚖️ 臺灣警政公文與刑事偵查範本庫 tw-formal-writing (v1.2.3)
+# 台灣正式文件撰寫助手 tw-formal-writing v2.0.0
 
-[![Version](https://img.shields.io/badge/version-v1.2.3-blue.svg)](https://github.com/lianghao02/tw-formal-writing)
-[![Markdown](https://img.shields.io/badge/Format-Markdown%2FPrompt-blue.svg)](https://daringfireball.net)
+[![Version](https://img.shields.io/badge/version-v2.0.0-blue.svg)](https://github.com/lianghao02/tw-formal-writing)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-## 🏆 v1.2.3 里程碑：臺灣警政公文與搜索扣押簽文標準庫
+提供台灣正式文件撰寫規則，涵蓋政府公文、政府機關其他文件、法律文件與人民對政府文書。專案以 `references/` 為規範內容來源，並產生不同平台可使用的 Skill 版本。
 
-## 📖 重大更新摘要 (Summary)
+## 內容範圍
 
-本版本為臺灣警政標準公文與刑事偵查實務 Prompt 範本庫之最新修訂版本，完全符合內政部警政署公文製作規範與刑事訴訟法體例。
+- 政府公文：簽、函、書函、公告及常見簽辦方式。
+- 政府機關其他文件：會議紀錄、新聞稿、施政報告等。
+- 法律文件：存證信函、合約、MOU、NDA、聲明書等格式參考。
+- 人民對政府文書：陳情書、申請書、訴願書、異議書與申覆書。
 
-基層員警在撰寫拘票簽文、搜索扣押報告或函發地檢署之公文時，常因格式不符、法律用語不精準而被退回重寫，耗費大量精力。本範本庫提供完整之 Prompt Template 與 Markdown 結構，可在 **10 秒內** 協助生成合乎法規之標準公文與偵查報告，有效維護執法專業。
+不涵蓋學術論文、商業計畫、履歷、私人書信或一般翻譯。
 
-## ✨ 重點更新特色
+## 檔案用途
 
-- 📜 **警政公文主旨說明擬辦標準化 (Strict Official Document Syntax)**：
-  - 規範「主旨」、「說明」、「擬辦」三段式結構，嚴格標註發文字號與附件對應。
-  - 杜絕公文用語不專業遭退件痛點，提高一次簽核通過率。
+- `SKILL.md`：支援 references 的完整 Skill 入口。
+- `STANDALONE.md`：由 `scripts/build.py` 產生的單檔完整版，請勿手動編輯。
+- `LITE.md`：適合 GPTs Instructions 的精簡版。
+- `examples/`：常見使用情境範例。
+- `CITATIONS.md`：規範來源與查核紀錄。
 
-- ⚖️ **刑事偵查報告與簽文 Prompt (Legal Reasoning Templates)**：
-  - 內建聲請拘票、搜索票、扣押物清冊與電信調閱聲請之標準法律論述範本。
-  - 提供軍規級法務品質保障，極致提升基層偵查行政效能。
+## 建置與驗證
+
+本專案以 Python 3.13 作為主要維護環境：
+
+```powershell
+python scripts/build.py
+python scripts/check_consistency.py
+```
+
+一致性檢查會驗證 `SKILL.md`、`LITE.md`、`STANDALONE.md` 的版本一致、單檔建置結果及必要規則錨點。
+
+## 使用限制
+
+- 機密文書、未公開資訊與高敏感個資不應交由生成式 AI 處理。
+- 法律文件輸出僅供格式與用語參考，不構成法律意見。
+- 法規、機關表單與送件期限可能變動，正式使用前應查核主管機關最新規定。
