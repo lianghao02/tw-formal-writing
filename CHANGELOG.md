@@ -2,6 +2,14 @@
 
 本文件記錄 tw-formal-writing 的重要異動。
 
+## [2.0.1] - 2026-08-17
+
+### 變更
+
+- 補齊 Codex、Antigravity、ChatGPT 與 Gemini 的下載後安裝方式。
+- 說明一般使用、建置、驗證與 GitHub 發布各自需要的依賴。
+- 修正發布檢查綁定舊 GitHub Repository 的問題。
+
 ## [2.0.0] - 2026-08-13
 
 ### 變更

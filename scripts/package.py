@@ -116,7 +116,7 @@ def create_release(version: str, zip_path: Path) -> None:
         sys.exit(f"ERROR: tag {tag} 不存在。請先 git tag {tag} 並 push，再建 release。")
 
     # 同名 release 已存在 → 不覆蓋，避免誤刪手動建好的版本
-    r = subprocess.run(["gh", "release", "view", tag, "-R", "Imbad0202/tw-formal-writing"],
+    r = subprocess.run(["gh", "release", "view", tag],
                        capture_output=True, text=True, cwd=str(ROOT))
     if r.returncode == 0:
         sys.exit(f"ERROR: release {tag} 已存在，不覆蓋。要更新請手動處理，或先刪除既有 release。")

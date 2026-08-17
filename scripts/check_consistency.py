@@ -50,7 +50,7 @@ def check_standalone_built() -> None:
     if r.returncode != 0:
         ERRORS.append("STANDALONE.md 不是 references/ 的最新 build 產物。請跑 python3 scripts/build.py")
     else:
-        print("✓ STANDALONE.md 與 references/ 一致")
+        print("[OK] STANDALONE.md 與 references/ 一致")
 
 
 def check_lite_anchors() -> None:
@@ -59,7 +59,7 @@ def check_lite_anchors() -> None:
     if missing:
         ERRORS.append("LITE.md 缺少關鍵錨點: " + "、".join(missing))
     else:
-        print(f"✓ LITE.md 涵蓋全部 {len(LITE_ANCHORS)} 個關鍵錨點")
+        print(f"[OK] LITE.md 涵蓋全部 {len(LITE_ANCHORS)} 個關鍵錨點")
 
 
 def check_package_manifest() -> None:
@@ -73,7 +73,7 @@ def check_package_manifest() -> None:
     if errors:
         ERRORS.append("skill 包打包清單缺檔: " + "、".join(errors))
     else:
-        print("✓ skill 包打包清單齊全（SKILL / references / examples / LICENSE）")
+        print("[OK] skill 包打包清單齊全（SKILL / references / examples / LICENSE）")
 
 
 def check_versions() -> None:
@@ -84,7 +84,7 @@ def check_versions() -> None:
     if len(set(versions.values())) != 1:
         ERRORS.append(f"三版 version 不一致: {versions}")
     else:
-        print(f"✓ 三版 version 一致: {next(iter(versions.values()))}")
+        print(f"[OK] 三版 version 一致: {next(iter(versions.values()))}")
 
 
 def main() -> None:
@@ -95,7 +95,7 @@ def main() -> None:
     if ERRORS:
         print("\nFAIL:")
         for e in ERRORS:
-            print("  ✗ " + e)
+            print("  [ERROR] " + e)
         sys.exit(1)
     print("\nAll consistency checks passed.")
 

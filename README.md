@@ -1,9 +1,18 @@
-# 台灣正式文件撰寫助手 tw-formal-writing v2.0.0
+# 台灣正式文件撰寫助手 tw-formal-writing v2.0.1
 
-[![Version](https://img.shields.io/badge/version-v2.0.0-blue.svg)](https://github.com/lianghao02/tw-formal-writing)
+[![Version](https://img.shields.io/badge/version-v2.0.1-blue.svg)](https://github.com/lianghao02/tw-formal-writing)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 提供台灣正式文件撰寫規則，涵蓋政府公文、政府機關其他文件、法律文件與人民對政府文書。專案以 `references/` 為規範內容來源，並產生不同平台可使用的 Skill 版本。
+
+## 下載、安裝與使用
+
+- **Codex**：將完整資料夾複製至 `%USERPROFILE%\.agents\skills\tw-formal-writing\`，重新開啟工作階段後即可依描述自動載入。
+- **Antigravity／Gemini CLI**：將完整資料夾複製至 `%USERPROFILE%\.gemini\config\skills\tw-formal-writing\`。
+- **ChatGPT／Gemini 網頁版**：上傳產生後的 `STANDALONE.md` 作為知識檔；空間受限時改用 `LITE.md` 作為 Instructions。
+- **維護依賴**：內容使用不需 Python；只有重新建置、檢查或封裝時需要 Python 3.13。建立 GitHub Release 另需已登入的 GitHub CLI。
+- **建置**：執行 `python scripts/build.py` 產生 `STANDALONE.md`，再執行 `python scripts/check_consistency.py`；發布前可用 `python scripts/package.py --check`。
+- **打包**：不要手動修改 `STANDALONE.md`；`SKILL.md` 與 `references/` 才是維護來源。
 
 ## 內容範圍
 
